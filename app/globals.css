@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  background: #07080a;
+  color: #e9ecef;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #d4ff3a;
+  color: #07080a;
+}
+
+@layer components {
+  .frame {
+    @apply mx-auto w-full max-w-frame px-4 sm:px-6 lg:px-10;
+  }
+  .mono {
+    @apply font-mono text-[11px] uppercase tracking-[0.14em];
+  }
+  .display {
+    @apply font-sans font-semibold leading-[0.88] tracking-[-0.055em];
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-line bg-panel px-3 py-1 font-mono text-[11px] text-dim;
+  }
+}
+
+/* blueprint dot grid */
+.dotgrid {
+  background-image: radial-gradient(rgba(233, 236, 239, 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* line-mask text reveal */
+.split-line {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.06em;
+  margin-bottom: -0.06em;
+}
+.split-inner {
+  display: inline-block;
+  will-change: transform;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 38s linear infinite;
+}
+
+/* React Flow theme */
+.react-flow {
+  --xy-background-color: transparent;
+  --xy-edge-stroke: #39414c;
+  --xy-edge-stroke-selected: #d4ff3a;
+  --xy-controls-button-background-color: #111419;
+  --xy-controls-button-background-color-hover: #171b21;
+  --xy-controls-button-color: #e9ecef;
+  --xy-controls-button-border-color: #222831;
+  --xy-minimap-background-color: #0b0d10;
+  --xy-minimap-mask-background-color: rgba(7, 8, 10, 0.7);
+  --xy-attribution-background-color: transparent;
+}
+.react-flow__attribution a {
+  color: #525a66 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
