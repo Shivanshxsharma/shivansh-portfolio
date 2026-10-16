@@ -51,7 +51,7 @@ export default function Experience() {
     <section id="experience" ref={root} className="relative border-t border-line bg-void py-24 md:py-32">
       <div className="frame grid gap-12 lg:grid-cols-[minmax(0,26rem)_1fr]">
         <div className="lg:sticky lg:top-28 lg:self-start">
-          <p className="mono text-faint">§ 04 — The path</p>
+          <h2 className="flex items-center gap-3 text-[15px] font-medium text-ink md:text-[16px]"><span className="mono text-faint">04</span><span className="h-px w-6 bg-line" />Experience & education</h2>
           <SplitText className="display mt-6 text-[clamp(2.8rem,6vw,5.5rem)]" lines={['Short history.', 'Steep slope.']} />
           <p className="mt-6 max-w-sm text-[16px] leading-[1.55] text-dim">
             I’m early in my career, so I optimise for depth: fewer projects, each one taken all the way to production.
@@ -113,6 +113,7 @@ export default function Experience() {
           ))}
         </ol>
       </div>
+
     </section>
   );
 }

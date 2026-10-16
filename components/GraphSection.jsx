@@ -687,7 +687,7 @@ export default function GraphSection() {
       {/* HUD */}
       <div className="pointer-events-none absolute inset-x-0 top-24">
         <div className="frame flex justify-between text-faint">
-          <span className="mono">§ 01 — Constellation</span>
+          <span className="mono">§ 01 — How everything connects</span>
           <span className="mono hidden sm:block">
             {COUNTS.nodes} nodes · {COUNTS.edges} edges
           </span>

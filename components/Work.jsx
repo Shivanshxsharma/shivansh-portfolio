@@ -136,7 +136,7 @@ export default function Work() {
   return (
     <div id="work" className="relative bg-void">
       <div className="frame pb-10 pt-28 md:pt-36">
-        <p className="mono text-faint">§ 02 — Selected systems</p>
+        <h2 className="flex items-center gap-3 text-[15px] font-medium text-ink md:text-[16px]"><span className="mono text-faint">03</span><span className="h-px w-6 bg-line" />My own projects — what I designed and built myself</h2>
         <SplitText className="display mt-6 text-[clamp(3rem,8vw,7.5rem)]" lines={['Three systems,', 'drawn to scale.']} />
         <p className="mt-6 max-w-lg text-[16px] leading-[1.55] text-dim">
           Scroll through each one. The architecture assembles step by step — every box is a real component, every edge a real call.

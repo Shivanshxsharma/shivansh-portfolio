@@ -6,9 +6,9 @@ import { PROFILE } from '@/lib/data';
 
 const LINKS = [
   ['Graph', '#graph'],
-  ['Work', '#work'],
-  ['Lab', '#lab'],
-  ['Path', '#experience'],
+  ['Internship', '#internship'],
+  ['Projects', '#work'],
+  ['Skills', '#skills'],
   ['Contact', '#contact'],
 ];
 

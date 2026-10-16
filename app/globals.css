@@ -68,28 +68,16 @@ body {
   to { opacity: 1; transform: none; }
 }
 
+@keyframes grow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
 @keyframes marquee {
   to { transform: translateX(-50%); }
 }
 .marquee-track {
   animation: marquee 38s linear infinite;
-}
-
-/* React Flow theme */
-.react-flow {
-  --xy-background-color: transparent;
-  --xy-edge-stroke: #39414c;
-  --xy-edge-stroke-selected: #d4ff3a;
-  --xy-controls-button-background-color: #111419;
-  --xy-controls-button-background-color-hover: #171b21;
-  --xy-controls-button-color: #e9ecef;
-  --xy-controls-button-border-color: #222831;
-  --xy-minimap-background-color: #0b0d10;
-  --xy-minimap-mask-background-color: rgba(7, 8, 10, 0.7);
-  --xy-attribution-background-color: transparent;
-}
-.react-flow__attribution a {
-  color: #525a66 !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

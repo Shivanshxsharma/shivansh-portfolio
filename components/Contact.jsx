@@ -46,7 +46,7 @@ export default function Contact() {
     <section id="contact" ref={root} className="relative overflow-hidden border-t border-line bg-void pb-10 pt-24 md:pt-36">
       <div className="dotgrid pointer-events-none absolute inset-0 opacity-50" />
       <div className="frame relative">
-        <p className="mono text-faint">§ 06 — Contact</p>
+        <h2 className="flex items-center gap-3 text-[15px] font-medium text-ink md:text-[16px]"><span className="mono text-faint">06</span><span className="h-px w-6 bg-line" />Contact</h2>
         <div data-big className="origin-left">
           <SplitText className="display mt-6 text-[clamp(3.4rem,11vw,11rem)]" lines={['Let’s build', <span key="s" className="text-signal">something that ships.</span>]} />
         </div>
@@ -90,7 +90,7 @@ export default function Contact() {
 
         <footer className="mt-24 flex flex-col justify-between gap-3 border-t border-line pt-6 text-faint sm:flex-row">
           <p className="mono">© 2026 {PROFILE.name}</p>
-          <p className="mono">Built with Next.js · three.js · GSAP · React Flow</p>
+          <p className="mono">Built with Next.js · three.js · GSAP · d3-force</p>
         </footer>
       </div>
     </section>
